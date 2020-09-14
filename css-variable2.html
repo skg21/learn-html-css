@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My color is red if you use css variable --red-color as  -color</h1>
+        <h2>This is h2 element</h2>
+        <p>This is paragraph.</p>
+        <style>
+            body {
+               
+                --sonu-cutom-color: #
+            }
+
+            h1 {
+                /* below custom variable is not inherited in h2, p */
+                --red-color: red;
+                color: var(--red-color);
+            }
+            h2 {
+                /*color will not be applied, because --red-color varibale is in different scope */
+                /* green color is attached fallback value */
+                color: var(--red-color, green);
+            }
+            p {
+                color: var(--red-color, green);
+            }
+        </style>
+    </body>
+</html>

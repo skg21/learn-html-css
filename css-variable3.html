@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My color is red if you use css variable --red-color as  -color</h1>
+        <h2>This is h2 element</h2>
+        <p>This is paragraph.</p>
+        <style>
+            :root {
+                /* --sonu-cutom-color variable can be used in below html elements(h1, h2, p...) */
+                --sonu-custom-color: #ffddaa;
+            }
+
+            h1 {
+                /* below custom variable is not inherited in h2, p */
+                --red-color: red;
+                color: var(--red-color);
+            }
+            h2 {
+                color: var(--sonu-custom-color);
+            }
+            p {
+                color: var(--sonu-custom-color);
+            }
+        </style>
+    </body>
+</html>
