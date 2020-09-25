@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="main-div">
+        <div class="frist-div"></div>
+        <div class="second-div"></div>
+        <div class="therd-div"></div>
+        <div class="four-div"></div>
+    </div>
+    <style>
+        .main-div {
+            width: 100%;
+            height: 900px;
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+        }
+
+        .frist-div {
+            width: 200px;
+            height: 200px;
+            border: solid 1px;
+            background-color: cyan;
+            border-radius: 100%;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        .second-div {
+            width: 200px;
+            height: 200px;
+            border: solid 1px;
+            background-color: cyan;
+            border-radius: 100%;
+            animation-name: now;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        .therd-div {
+            width: 200px;
+            height: 200px;
+            border: solid 1px;
+            background-color: cyan;
+            border-radius: 100%;
+            animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        .four-div {
+            width: 200px;
+            height: 200px;
+            border: solid 1px;
+            background-color: cyan;
+            border-radius: 100%;
+            animation-name: move;
+            animation-duration: 3.5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes move {
+            0% {
+                top: 0;
+                background: linear-gradient(cyan, #000099, #66c2ff, #ffcccc, #ffeee6);
+            }
+
+            50% {
+                top: 50%;
+                background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+            }
+
+            100% {
+                top: 0;
+                background: linear-gradient(cyan, #000099, #66c2ff, #ffcccc, #ffeee6);
+            }
+
+        }
+
+        @keyframes now { 
+            0% {
+                top: 0;
+                background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+            }
+
+            50% {
+                top: 50%;
+                background: linear-gradient(cyan, #000099, #66c2ff, #ffcccc, #ffeee6);
+            }
+
+            100% {
+                top: 0;
+                background: linear-gradient(cyan, #000099, #66c2ff, #ffcccc, #ffeee6);
+            }
+        }
+    </style>
+</body>
+
+</html>
