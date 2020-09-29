@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-text">
+            <div class="banner-text-items">
+                <h2>Banner text heading1.</h2>
+                <p>Some paragraph content for banner1, Some paragraph content for banner1, Some paragraph content for
+                    banner1</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="main1">
+            <h2>Main content1 heading</h2>
+            <p>Some paragraph content for banner1, Some paragraph content for banner1, Some paragraph content for
+                banner1</p>
+        </div>
+
+        <div class="main1">
+            <h2>Main content2 heading</h2>
+            <p>Some paragraph content for banner1, Some paragraph content for banner1, Some paragraph content for
+                banner1</p>
+        </div>
+
+        <div class="main1">
+            <h2>Main content3 heading</h2>
+            <p>Some paragraph content for banner1, Some paragraph content for banner1, Some paragraph content for
+                banner1</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-text">
+            <div class="contact-items">
+                <h2>Contact Us</h2>
+                <input type="text" class="name" placeholder="Your Name">
+                <input type="text" placeholder="Your email">
+                <textarea name="" id="" cols="20" rows="20"></textarea>
+                <a href="#">Submit</a>
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .banner {
+            background: url("hotel-room.jpg");
+            width: 100%;
+            background-size: cover;
+        }
+
+        .top-bar {
+            background-color: black;
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            color: white;
+            flex: 1;
+            /*1 1 opx*/
+            font-size: 40px;
+            padding: 18px;
+            text-transform: uppercase;
+        }
+
+        .menu {
+            flex: 3;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            margin-top: 30px;
+            flex-flow: row wrap;
+        }
+
+        .menu ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .banner-text {
+            display: flex;
+            padding: 15% 0;
+        }
+
+        .banner-text-items {
+            color: black;
+            margin: auto;
+            text-align: center;
+            width: 50%;
+        }
+
+        .banner-text-items h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .banner-text-items p {
+            font-size: 18px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 5% 0;
+        }
+
+        .main1 {
+            flex: 1;
+            padding: 3%;
+            text-align: center;
+        }
+
+        .contact {
+            background: url("contact-background3.jpg");
+            padding: 80px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact::before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        .contact-items h2 {
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+
+        .contact-items input[type="text"] {
+            width: 50%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        .contact-items textarea {
+            height: 150px;
+            width: 50%;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .contact-items a {
+            background-color: #da4b29;
+            margin-top: 15px;
+            padding: 10px 80px;
+            border-radius: 10px;
+            color: #fff;
+            display: block;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .top-bar .logo {
+               padding: 20 0 0;
+            }
+            .menu ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</body>
+
+</html>
