@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnUB6dCdOVMkLZF-BnBa8oTOJNwY_kWvVmCQ&usqp=CAU" alt="icon-img" class="header-img">
+        <div class="header-signin-div">
+         <a href="" class="signin-text">SignIn</a>
+         <i class="fa fa-sign-in"></i>
+        </div>
+    </header>
+    <main>
+        <section class="banner-area">
+            <h2 class="banner-area-item"> CLOUD NATIVE STREAMING </h2>
+            <p class="banner-area-item">cloud native streaming in a video streaming platform which ott solution.CNS
+                users to which their video content semlessly
+            </p>
+            <a href="#" class="banner-btn banner-area-item">contact us</a>
+        </section>
+        <section class="section-area">
+            <div class="main-left-div"></div>
+            <div class="main-right-div">
+                <h2 class="main-right-div-item">ABOUT US</h2>
+                <h3 class="main-right-div-item">about our company</h3>
+                <p class="main-right-div-item"> my css and html...jinfiehnuiehi njn ensd elasphihsnjljcnqapidcqlf
+                    qjin pwe9sdvjnw cqpodcjepf;in i89pq;fnqc
+                    osiej9w0wowndww paq c-0donnfindnciow o0kwdicddpncqiojwbqasafqa;
+                </p>
+                <a href="#" class="main-right-div-item">LEARN MORE</a>
+            </div>
+        </section>
+        <section class="section-area-3">
+            <div class="section3-main-div">
+            <h3 class="service-titel">service</h3>
+            <ul class="services-content">
+                <li>
+                    <i class="fa fa-laptop"></i>
+                    <h4>wab desing</h4>
+                    <p>Lorem ipsum dolor sit amet ,consecttur adipisicng elit. est, reprehenderit.</p>
+                </li>
+                <li>
+                    <i class="fa fa-signal"></i>
+                    <h4>marketing</h4>
+                    <p>Lorem ipsum dolor sit amet ,consecttur adipisicng elit. est, reprehenderit.</p>
+                </li>
+                <li>
+                    <i class="fa fa-user"></i>
+                    <h4>graphice</h4>
+                    <p>Lorem ipsum dolor sit amet ,consecttur adipisicng elit. est, reprehenderit.</p>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 50px;
+            background-color: crimson;
+            display: flex;
+            justify-content: space-between;
+            color:white
+        }
+        .header-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .header-signin-div {
+            position: relative;
+            top: 25%;
+            margin-right: 1%;;
+        }
+
+        header .signin-text {
+            color: white;
+            text-decoration: none;
+        }
+
+        .banner-area {
+            height: 600px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("cns-section-img.jpg");
+            background-size: cover;
+        }
+
+        .banner-area::after {
+            background-color: black;
+            content: "";
+            position: absolute;
+            top: 1;
+            left: 0;
+            background-size: cover;
+            opacity: 0.8;
+            width: 100%;
+            height: 600px;
+        }
+
+        .banner-area-item {
+            padding: 30px;
+            z-index: 1;
+        }
+
+        .banner-area p {
+            max-width: 500px;
+            font-size: 15px;
+        }
+
+        .banner-area a {
+            background-color: crimson;
+            border-radius: 10px;
+            padding: 10px 35px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .section-area {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .main-left-div {
+            width: 536px;
+            height: 385px;
+            margin-left: 78px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQE3S3-oP7XRB7OZmo656ReOY930HJT2_Fgg&usqp=CAU");
+            flex-basis: 30%;
+            background-size: cover;
+            border-radius: 5px;
+            margin-top: 5%;
+        }
+
+        .main-right-div {
+            width: 700px;
+            height: 348px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 120px;
+        }
+
+        .main-right-div h2 {
+            font-size: 60px;
+        }
+
+        .main-right-div p {
+            font-size: 15px;
+        }
+
+        .main-right-div-item {
+            margin: 30px;
+        }
+
+        .main-right-div a {
+            text-decoration: none;
+            background-color: crimson;
+            padding: 15px 35px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            position: relative;
+            top: 40px;
+        }
+
+        .section-area-3 {
+            background: #ddd;
+            width: 100%;
+            height: 400px;
+        }
+
+        .service-titel {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin-bottom: 5px;
+            justify-content: center;
+            display: flex;
+            margin-top: 8%;
+        }
+
+        ul.services-content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .services-content li {
+            padding: 0 30px;
+            flex: 1 1 33%;
+            text-align: center;
+            list-style: none;
+        }
+
+        .services-content li i {
+            font-size: 50px;
+            color: crimson;
+            margin-bottom: 25px;
+        }
+
+        .services-content li h4 {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .services-content li p {
+            margin: 0;
+        }
+
+        .section3-main-div {
+            margin: 10px;
+        }
+    </style>
+</body>
+
+</html>
