@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="box-area">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class="header-text"><strong>wab design</strong></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eos delectus aperiam iste alias
+                    quisipsa
+                    asperiores quaerat consequatur et.</p>
+            </div>
+        </div>
+    </div>
+    <div class="box-area">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class="header-text"><strong>graphics design</strong></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore eos delectus aperiam iste alias quis ipsa asperiores quaerat consequatur et.</p>
+            </div>
+        </div>
+    </div>
+    <div class="box-area">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class="header-text"><strong>email marketing</strong></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore eos delectus aperiam iste alias quis ipsa asperiores quaerat consequatur et.</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            background: #262626;
+        }
+
+        .box-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .single-box {
+            width: 300px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 4px;
+            margin: 20px;
+            padding: 20px;
+            transition: .3s;
+
+        }
+
+        .img-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border: solid 6px #ddd;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .single-box .img-area:nth-last-child(1) {
+            background-image: url("cns-section-img.jpg");
+        }
+
+        .single-box .img-area:nth-last-child(2) {
+            background-image: url("https://www.gsiit.com.bd/wp-content/uploads/2015/06/banner5_img_right.png");
+        }
+
+        .single-box .img-area:nth-last-child(3) {
+            background-image: url("hotel-room.jpg");
+        }
+
+        .header-text {
+            font-size: 24px;
+            font-weight: 500px;
+            line-height: 48px;
+        }
+
+        .img-text {
+            font-family: poppins;
+            padding-top: 20px;
+        }
+
+        .img-text p {
+            font-size: 15px;
+            font-weight: 400px;
+            line-height: 30px;
+        }
+
+        .single-box:hover {
+            background-color: #e84339;
+            color: #fff;
+        }
+    </style>
+</body>
+
+</html>
