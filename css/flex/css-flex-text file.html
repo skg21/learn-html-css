@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="body-box-area">
+        <div class="box-area">
+            <div class="img-div"></div>
+            <div class="text-img">
+                <span class="text"> <strong>my wab desiging</strong></span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptates doloremque mollitia
+                    assumenda exercitationem iste eveniet veritatis reiciendis deserunt quo dolore cum animi,
+                    accusantium incidunt eos, qui beatae modi? Doloremque!</p>
+            </div>
+        </div>
+        <div class="box-area">
+            <div class="img-div"></div>
+            <div class="text-img">
+                <span class="text"> <strong>my lokig wab...</strong></span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptates doloremque mollitia
+                    assumenda exercitationem iste eveniet veritatis reiciendis deserunt quo dolore cum animi,
+                    accusantium incidunt eos, qui beatae modi? Doloremque!</p>
+            </div>
+        </div>
+        <div class="box-area">
+            <div class="img-div"></div>
+            <div class="text-img">
+                <span class="text"> <strong>my name</strong></span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptates doloremque mollitia
+                    assumenda exercitationem iste eveniet veritatis reiciendis deserunt quo dolore cum animi,
+                    accusantium incidunt eos, qui beatae modi? Doloremque!</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        .body-box-area {
+            width: 100%;
+            background-color: lightblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box-area {
+            width: 300px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: hotpink;
+            border-radius: 4px;
+            margin: 20px;
+            padding: 20px;
+            transition: .3s;
+        }
+
+        .img-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border: solid 6px #ddd;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box-area:nth-last-child(1) .img-div {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNOhDkJ2TrporWjSbXSK6im9FHqhYeK-5bcg&usqp=CAU")
+        }
+
+        .box-area:nth-last-child(2) .img-div {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT3PxocgrxOfzISUOqyI-GylrMai-Rfibmtgg&usqp=CAU")
+        }
+
+        .box-area:nth-last-child(3) .img-div {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMgoVXWC7x1XHm6oL-fCYIP2XywgopWkF7GQ&usqp=CAU")
+        }
+    </style>
+</body>
+
+</html>
