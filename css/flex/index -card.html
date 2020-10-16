@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <span>i</span>
+            <h1>Hey</h1>
+            <p> this is an informative card that will tell you something that's...will,important! </p>
+        </div>
+    </div>
+    <style>
+        body {
+            display: grid;
+            margin: 0;
+            height: 100vh;
+            background-color: #dcf5ff;
+            justify-items: center;
+            align-items: center;
+            font-family: 'nunito'sans-serif;
+        }
+
+        .container {
+            background-color: #dcf5ff;
+            width: 275px;
+            border-radius: 10px;
+        }
+
+        .inner {
+            background-color: rgb(7, 218, 165);
+            padding: 1em;
+            border-radius: 10px;
+            width: 250px;
+            clip-path: circle(10% at 90% 20%);
+            transition: all.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .inner h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .inner p {
+            color: white;
+            font-size: .8rem;
+        }
+
+        *:hover .inner {
+            clip-path: circle(75%);
+        }
+
+        span {
+            float: right;
+            color: white;
+            font-weight: bold;
+            transition: color .5s;
+            position: relative;
+            margin-right: 4%;
+        }
+
+        *:hover span {
+            color: rgba(255, 255, 255, 0);
+        }
+
+        .container .inner:hover {
+            clip-path: circle(75%);
+            background: #00b6ff;
+        }
+    </style>
+
+</body>
+
+</html>

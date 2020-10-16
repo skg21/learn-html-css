@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="main-div">
+        <div class="box1">
+            <img src="https://image.shutterstock.com/image-photo/laptop-mobile-phone-tablet-documents-600w-735900559.jpg" alt="city img">
+            <h1>box 1</h1>
+        </div>
+        <div class="box2">
+            <h1>box 2</h1>
+        </div>
+        <div class="box3">
+            <h1>box 3</h1>
+        </div>
+    </div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main-div {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "box1 box2"
+                "box3 box3";
+        }
+
+        .box1 {
+            background-color: lightcoral;
+        }
+
+        .box2 {
+            background-color: lightblue;
+        }
+
+        .box3 {
+            background-color: lightgreen;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+            grid-area: box2;
+        }
+
+        .box3 {
+            grid-area: box3;
+        }
+    </style>
+</body>
+
+</html>
