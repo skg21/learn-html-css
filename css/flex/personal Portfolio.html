@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!--main container-->
+    <div class="main-container">
+        <div class="aside">
+            <!--logo-->
+            <div class="logo">
+                <a href="#">Sonu</a>
+            </div>
+            <!--nav- toggler btn-->
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <!--nav-->
+            <ul class="nav">
+                <li><a href="#" class="active"><i class="fa fa-home"> Home</i></a></li>
+                <li><a href="#"><i class="fa fa-user"> About</i></a></li>
+                <li><a href="#"><i class="fa fa-list"> services</i></a></li>
+                <li><a href="#"><i class="fa fa-briefcase"> portfolio</i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"> Bloge</i></a></li>
+                <li><a href="#"><i class="fa fa-comments"> Contact</i></a></li>
+            </ul>
+            <!--copyright-->
+            <div class="coryright-text">
+                &copy;2020 The Webshala Template
+            </div>
+        </div>
+        <!--aside-end-->
+        <!--main-content-->
+        <div class="main-content">
+            <!--home -section-->
+            <section class="home section">
+                <!--home -section-end-->
+                <div class="container">
+                    <div class="intro">
+                        <img src="laptop-Img.jpg" alt="profile" class="shadow-dark">
+                        <h1>Sonu gurjar</h1>
+                        <p>I' m a Web Developer</p>
+                        <div class="social-link">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--main-content-end-->
+    </div>
+    <!--main container-->
+
+    <style>
+        @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Rubik:500,600,700&display=swap');
+
+
+        body {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 16px;
+            font-family: 'montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+            box-sizing: border-box;
+
+        }
+
+
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            padding-left: 270px;
+        }
+
+        .section {
+            background-color: #f2f2fc;
+            min-height: 100vh;
+            display: block;
+            padding: 0 30px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            width: 100%;
+            margin-top: 250px;
+        }
+
+        .shadow-dark {
+            box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+        }
+
+        /*Aside */
+        .aside {
+            width: 270px;
+            background-color: #fdf9ff;
+            position: fixed;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            border-right: 1px solid #e8dfec;
+            padding: 30px;
+        }
+
+        .aside .logo a {
+            padding: 30px 0;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            line-height: 50px;
+            font-size: 40px;
+            color: #302e4d;
+            font-family: 'Rubik', sans-serif;
+
+
+        }
+
+        .aside .logo ::before {
+            content: "";
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .aside .logo a::before {
+            border-top: 4px solid #ec1839;
+            border-left: 4px solid #ec1839;
+
+        }
+
+        .aside .logo ::after {
+            content: "";
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .aside .logo a::after {
+            border-right: 4px solid #ec1839;
+            border-bottom: 4px solid #ec1839;
+        }
+
+        .aside .nav-toggler {
+            height: 40px;
+            width: 45px;
+            border: 1px solid #d4d4e3;
+            cursor: pointer;
+            position: fixed;
+            left: 300px;
+            top: 30px;
+            z-index: 11;
+            border-radius: 5px;
+            background-color: #fdf9ff;
+            /*  display: '-ms-flexbox';
+            display: flex;*/
+            display: none;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .aside .nav-toggler span,
+        .aside .nav-toggler span::before,
+        .aside .nav-toggler span::after,
+        .home .intro .social-link a {
+            height: 2px;
+            width: 18px;
+            display: inline-block;
+            background-color: #ec1839;
+            position: relative;
+        }
+
+        .aside .nav-toggler span::before {
+
+            content: "";
+            height: 2px;
+            width: 18px;
+            position: absolute;
+            top: -6px;
+            left: 0;
+
+        }
+
+        .aside .nav-toggler span::after {
+            content: "";
+            height: 2px;
+            width: 18px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+
+        }
+
+
+        .aside .nav {
+            margin: 80px 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        .aside .nav li {
+            display: block;
+
+        }
+
+        .aside .nav li a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #302e4d;
+            text-decoration: none;
+            line-height: 45px;
+            display: block;
+            border-bottom: 1px solid #e8dfec;
+            transition: all 0.3s ease;
+            text-transform: capitalize;
+
+        }
+
+        .aside .nav li a :not(.active):hover {
+            padding-left: 5px;
+            color: #ec1839;
+        }
+
+        .aside .nav li .active {
+            color: #ec1839;
+        }
+
+        .aside .coryright-text {
+            font-size: 13px;
+            color: #7d7d7d;
+        }
+
+        .home {
+            min-height: 100vh;
+            display: '-ms-flexbox';
+            display: flex;
+        }
+
+        .home .intro {
+            text-align: center;
+        }
+
+        .home .intro img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 8px solif #ffffff;
+        }
+
+        .home .intro h1 {
+            font-size: 30px;
+            color: #302e4d;
+            font-family: 'rubik'sans-serif;
+            font-weight: 700;
+            margin: 20px 0 5px;
+        }
+
+        .home .intro p {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+            line-height: 22px;
+            color: #504e70;
+        }
+
+        .home .intro .social-link {
+            margin-top: 25px;
+        }
+
+        .home .intro .social-link a {
+            height: 35px;
+            width: 35px;
+            display: inline-block;
+            text-align: center;
+            line-height: 35px;
+            color: #ffffff;
+            margin: 0 4px;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .home .intro .social-link a:hover {
+            transform: scale(1.1);
+        }
+
+        /*Home */
+    </style>
+</body>
+
+</html>
