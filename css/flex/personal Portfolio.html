@@ -34,8 +34,9 @@
         <!--aside-end-->
         <!--main-content-->
         <div class="main-content">
+
             <!--home -section-->
-            <section class="home section">
+            <section class="home section hidden">
                 <!--home -section-end-->
                 <div class="container">
                     <div class="intro">
@@ -51,6 +52,61 @@
                     </div>
                 </div>
             </section>
+            <!--Home-section-end-->
+
+            <!--About-saction-->
+            <section class="about-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I' m sonu gurjar and <span>Web Developer</span></h3>
+                                    <p> Hi! my name is sonu gurjar. i am a wab Developer, and I' m very passionate and
+                                        dedicate. </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p> Birthday :<span> 18 set. 1997</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p> Age :<span> 28</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p> Wabsite :<span> </span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p> Email:<span> sanjaygurjar.......</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p> phone :<span>6378292367</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="persnal-info padd-15">
+                                    persanal Info
+                                </div>
+                                <div class="skills padd-15">
+                                    skills
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--About-section-end-->
+
         </div>
         <!--main-content-end-->
     </div>
@@ -85,9 +141,54 @@
             box-sizing: border-box;
         }
 
+        .section .container {
+            padding-top: 60px;
+            padding-bottom: 70px;
+        }
+
+        .section-title {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            color: #302e4d;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
+            margin: 0;
+            position: relative;
+        }
+
+        .section-title h2::after {
+            content: "";
+            height: 4px;
+            width: 25px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            position: relative;
+        }
+
+        .padd-15 {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
         .main-content {
             padding-left: 270px;
         }
+
 
         .section {
             background-color: #f2f2fc;
@@ -105,6 +206,10 @@
 
         .shadow-dark {
             box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+        }
+
+        .hidden {
+            display: none !important;
         }
 
         /*Aside */
@@ -241,12 +346,10 @@
 
         }
 
-        .aside .nav li a :not(.active):hover {
-            padding-left: 5px;
-            color: #ec1839;
-        }
-
+        .row .about-content .about-text h3 span,
+        .aside .nav li a :not(.active):hover,
         .aside .nav li .active {
+            padding-left: 5px;
             color: #ec1839;
         }
 
@@ -311,6 +414,47 @@
         }
 
         /*Home */
+
+        /*About section */
+        .row .about-content {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 50%;
+            max-width: 100%;
+        }
+
+        .row .about-content .about-text {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .row .about-content .about-text h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #302e4d;
+        }
+
+        .row .about-content .about-text p {
+            font-size: 16px;
+            line-height: 25px;
+            color: #504e70;
+            margin: 0;
+        }
+
+        .row .about-content .persnal-info {
+            background-color: red;
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+
+        .row .about-content .skills {
+            background-color: blue;
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
     </style>
 </body>
 
