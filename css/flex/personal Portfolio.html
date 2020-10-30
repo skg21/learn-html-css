@@ -76,34 +76,76 @@
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p> Birthday :<span> 18 set. 1997</span></p>
+                                            <p> Birthday : <span> 18 set. 1997</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> Age :<span> 28</span></p>
+                                            <p> Age : <span> 28</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> Wabsite :<span> </span></p>
+                                            <p> Wabsite : <span> </span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> Email:<span> sanjaygurjar.......</span></p>
+                                            <p> Email : <span> sanjaygurjar.......</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> phone :<span>6378292367</span></p>
+                                            <p> phone : <span> 6378292367</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p> City : <span> Rajesthan</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#" class="btn"> Downloed CV </a>
+                                            <a href="#" class="btn"> Hire Me </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="persnal-info padd-15">
-                                    persanal Info
+                                <div class="row">
+                                    <div class="skills padd-15">
+                                        <div class="row">
+                                            <div class="skills-item padd-15">
+                                                <h5>Javascript</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 76%"></div>
+                                                    <div class="skill-precent">76%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skills-item padd-15">
+                                                <h5>Wordpress</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 90%"></div>
+                                                    <div class="skill-precent">90%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skills-item padd-15">
+                                                <h5>Java</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 80%"></div>
+                                                    <div class="skill-precent">80%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skills-item padd-15">
+                                                <h5>Bootstrap</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 60%"></div>
+                                                    <div class="skill-precent">60%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="skills padd-15">
-                                    skills
+                                <div class="row">
+                                    <div class="education">
+                                        hello
+                                    </div>
+                                    <div class="experience">
+                                        hello
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <!--About-section-end-->
 
@@ -178,6 +220,7 @@
             margin-right: -15px;
             margin-left: -15px;
             position: relative;
+
         }
 
         .padd-15 {
@@ -206,6 +249,23 @@
 
         .shadow-dark {
             box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+        }
+
+        .btn {
+            font-size: 16px;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+            padding: 12px 35px;
+            color: #ffffff;
+            border-radius: 40px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .btn:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
         }
 
         .hidden {
@@ -289,15 +349,13 @@
             justify-content: center;
         }
 
+        .row .skills-item .progress .progress-in,
+        .btn,
         .aside .nav-toggler span,
         .aside .nav-toggler span::before,
         .aside .nav-toggler span::after,
         .home .intro .social-link a {
-            height: 2px;
-            width: 18px;
-            display: inline-block;
             background-color: #ec1839;
-            position: relative;
         }
 
         .aside .nav-toggler span::before {
@@ -443,17 +501,106 @@
         }
 
         .row .about-content .persnal-info {
-            background-color: red;
             -ms-flex: 0 0 60%;
             flex: 0 0 60%;
             max-width: 60%;
+            margin-top: 40px;
         }
 
-        .row .about-content .skills {
-            background-color: blue;
+        .row .info-item {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .row .info-item p {
+            font-weight: 600;
+            padding: 10px 0px;
+            font-weight: 16px;
+            margin: 0;
+            color: #302e4d;
+            border-bottom: 1px solid #e8dfec;
+        }
+
+        .row .info-item p span {
+            font-weight: 400;
+            color: #504e70;
+            margin-left: 4px;
+            display: inline-block;
+        }
+
+        .row .buttons {
+            margin-top: 30px;
+        }
+
+        .row .buttons .btn {
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+
+        .row .skills {
             -ms-flex: 0 0 40%;
             flex: 0 0 40%;
             max-width: 40%;
+            margin-top: 40px;
+        }
+
+        .row .skills-item {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 30px;
+
+        }
+
+        .row .skills-item h5 {
+            line-height: 40px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #302e4d;
+            text-transform: capitalize;
+            margin: 0;
+        }
+
+        .row .skills-item .progress {
+            background-color: #e3e3e3;
+            height: 8px;
+            border-radius: 4px;
+            width: 100%;
+            position: relative;
+        }
+
+        .row .skills-item .progress .progress-in {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            border-radius: 4px;
+        }
+
+
+        .row .skills-item .skill-precent {
+            line-height: 40px;
+            position: absolute;
+            right: 0;
+            top: -40px;
+            font-weight: 400;
+            color: #302e4d;
+        }
+
+        .row .education .padd-15 {
+            background-color: red;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+
+        }
+
+        .row .experience .padd-15 {
+            background-color: blue;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
         }
     </style>
 </body>
