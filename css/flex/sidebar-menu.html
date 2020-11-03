@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html leng="en" dir="1tr">
+<title>Sidebar dashboard template</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<body>
+
+    <input type="checkbox" id="check">
+    <!--header-area-start-->
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar-btn"></i>
+        </label>
+        <div class="left-area">
+            <h3>Coding<span> Snow</span></h3>
+        </div>
+        <div class="right-area">
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </header>
+    <!--header-area-end-->
+
+
+    <!--sidebar-area-start-->
+    <div class="sidebar">
+        <center>
+            <img src="my-img.jpg" class="profile-img" alt="">
+            <h4>Sonu</h4>
+        </center>
+        <a href="#"><i class="fa fa-desktop" aria-hidden="true"><span> Dashboard</span></i></a>
+        <a href="#"><i class="fa fa-cogs" aria-hidden="true"><span> Components</span></i></a>
+        <a href="#"><i class="fa fa-table" aria-hidden="true"><span> Tables</span></i></a>
+        <a href="#"><i class="fa fa-th" aria-hidden="true"><span> Forms</span></i></a>
+        <a href="#"><i class="fa fa-info-circle" aria-hidden="true"> About<span></span></i></a>
+        <a href="#"><i class="fa fa-sliders-h" aria-hidden="true"><span> settings</span></i></a>
+        <!--sidebar-area-end-->
+    </div>
+    <div class="content"></div>
+
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "roboto", sans-serif;
+        }
+
+        header {
+            position: fixed;
+            background: #22242a;
+            padding: 20px;
+            width: 100%;
+            height: 30px;
+        }
+
+        .left-area h3 {
+            color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: 900;
+
+        }
+
+
+        .left-area span {
+            color: #1dc4e7;
+        }
+
+        .logout-btn {
+            padding: 5px;
+            background: #19b3d3;
+            text-decoration: none;
+            float: right;
+            margin-top: -30px;
+            margin-right: 40px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            transition: 0.5s;
+            transition-property: "background"
+        }
+
+        .logout-btn:hover {
+            background: #0D9Dbb;
+        }
+
+        .sidebar {
+            background: #2f323a;
+            margin-top: 70px;
+            padding-top: 30px;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            transition-property: left;
+            transition: 0.5s;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            margin-bottom: 10px;
+        }
+
+
+        .sidebar h4 {
+            color: #ccc;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 40px;
+            box-sizing: border-box;
+            transition-property: "background";
+            transition: 0.5s;
+
+        }
+
+        .sidebar i {
+            padding-right: 10px;
+        }
+
+        .sidebar a:hover {
+            background: #19B3D3;
+
+        }
+
+        label #sidebar-btn {
+            z-index: 1;
+            color: white;
+            position: fixed;
+            cursor: pointer;
+            left: 300px;
+            font-size: 20px;
+            margin: 5px 0;
+            transition-property: "color";
+            transition: 0.5s;
+
+        }
+
+        label #sidebar-btn:hover {
+            color: #19B3D3;
+        }
+
+        #check:checked~.sidebar {
+            left: -190px;
+        }
+
+        #check:checked~.a span {
+            display: none;
+        }
+
+        #check:checked~.a {
+            font-size: 20px;
+            margin-left: 170px;
+            width: 80px;
+        }
+
+        .content {
+            margin-left: 250px;
+            background: url("img-6.jpg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            transition: 0.5s;
+        }
+
+        #check:checked~.content {
+            margin-left: 60px;
+        }
+
+        #check {
+            display: none;
+        }
+    </style>
+</body>
+
+</html>
