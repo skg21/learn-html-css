@@ -7,8 +7,48 @@
 
 <body>
     <section>
+        <!--navigation -->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo"> G T Interent</a>
+            <!--menu-->
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Contact Us</a></li>
+                <li><a href="#"> Team </a></li>
+            </ul>
+        </nav>
 
+        <!--text-->
+        <div class="text-conatiner">
+            <p>Hello</p>
+            <p>I' M TOUSEEQ</p>
+            <p>I am Software Engineer <br> & Designer</p>
+            <button class="hire-btn">Hire me</button>
+            <button class="down-cv">Downlode Cv</button>
+        </div>
+        <!--model-->
+        <img src="remove-bg.png" class="model" alt="model">
     </section>
+    <!--about-section-->
+    <div class="about-container">
+        <!--img-->
+        <img src="remove-bg.png" alt="#">
+        <!--about-text-------->
+        <div class="about-text">
+            <p>About Me</p>
+            <p>Devolper & Designer</p>
+            <p> Hello my name is sonu gurjar i am a Devolperand also a Designer.</p>
+            <p> I am a Devolper and also Designer.If you have asany porject or if you want mack a Software for your
+                bussniess
+                Contact me. I mack your project as a soon as possible.
+            </p>
+            <!--button-->
+            <button>Hire me</button>
+            <button> Downlode-Cv</button>
+        </div>
+    </div>
     <style>
         body {
             background-color: #f6f5f5;
@@ -30,7 +70,149 @@
             background-image: url("bag-img.png");
             background-repeat: no-repeat;
             background-size: cover;
+            position: relative;
         }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            padding: 0 5%;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li a {
+            margin: 30px;
+            font-family: myriad pro regular;
+            color: #505050;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .logo {
+            font-family: "RoadTest";
+            color: #000000;
+            font-size: 22px;
+        }
+
+        .active {
+            font-weight: bold;
+            color: #2d2a2a;
+        }
+
+        .text-conatiner p:nth-child(1) {
+            font-family: calibri;
+            font-weight: bold;
+            color: #6d6d6d;
+            font-size: 22px;
+        }
+
+        .text-conatiner p:nth-child(2) {
+            font-family: Calibri;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: red;
+            font-size: 60px;
+        }
+
+        .text-conatiner p:nth-child(3) {
+            font-family: myriad pro regular;
+            color: #403e3e;
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        .text-conatiner p {
+            line-height: 0px;
+            margin: 45px 0px 25px;
+        }
+
+        .text-conatiner {
+            position: absolute;
+            left: 13%;
+            top: 42%;
+            transform: translate(-13% -42%);
+        }
+
+        .text-conatiner button {
+            width: 130px;
+            height: 42px;
+            border-radius: 10px;
+            font-family: Calibri;
+            font-weight: bold;
+            font-size: 13px;
+            outline: none;
+            margin: 0 10px;
+        }
+
+        .hire-btn {
+            border: 2px solid #373636;
+            color: #373636;
+        }
+
+        .down-cv {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            border: none;
+        }
+
+        button:active {
+            transform: scale(1.1);
+        }
+
+        .model {
+            height: 660px;
+            position: absolute;
+            bottom: 25px;
+            left: 70%;
+            transform: translatex(-70%);
+        }
+
+        .about-container {
+            width: 80%;
+            height: 330px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            margin: -7% auto 20px auto;
+            position: relative;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .about-container img {
+            height: 250px;
+        }
+
+        .about-text {
+            width: 550px;
+        }
+
+        .about-text p:nth-child(1) {
+            color: #403e3e;
+            font-family: "myriad pro";
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 0px;
+        }
+
+        .about-text p:nth-child(2) {
+            color: #3e3d3d;
+            font-size: 13px;
+            font-family: "myriad pro";
+            font-weight: bold;
+            line-height: 5px;
+        }
+
+        .about-text p:nth-child(3),
+        .about-text p:nth-child(4) {}
     </style>
 </body>
 
