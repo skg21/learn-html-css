@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        window.onload = function () {
+            getGithubUserData();
+        };
+
+        function getGithubUserData() {
+            var url = "https://api.github.com/users/karsingh991";
+            var req = new XMLHttpRequest();
+            req.open("GET", url);
+            req.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    var userData = JSON.parse(this.responseText);
+                    setUserDataToDOM(userData);
+                }
+            }
+            req.send();
+        }
+
+        //set userdata in html
+        function setUserDataToDOM(userData) {
+            console.log(userData);
+            var imgSRC = userData.avatar_url;
+
+            //update image src link
+            var img = document.getElementById("profile-img");
+            img.setAttribute("src", imgSRC);
+
+            //change username 
+            var nameDOM = document.getElementById("name");
+            nameDOM.innerHTML = userData.name;
+
+            var followerDOM = document.getElementById("followers");
+            followerDOM.innerHTML = "followers " + userData.followers;
+
+            var followingDom = document.getElementById("following");
+            followingDom.innerHTML = "following" + userData.following;
+
+            var usernameDOM = document.getElementById("username");
+            usernameDOM.innerHTML = userData.login;
+
+            var sonuDom = document.getElementById("stu-name");
+            sonuDom.innerHTML = userData.bio;
+        }
+
+        // followers user
+
+    </script>
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="main-div">
+            <div class="img-div">
+                <img id="profile-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqQ4D7_PCpB_0ZXYKtTvdtMPZnwJhKmPw6A&usqp=CAU">
+            </div>
+            <div class="elements">
+                <h2 id="name">Sanjay Kumar</h2>
+                <h3 class="id-name" id="username">skg21</h3>
+                <h4 id="stu-name">student</h4>
+                <button class="btn" type="text">Edit profile</button>
+                <div id="socal-link-followers">
+                    <a href="#">
+                        <i class="fa fa-user" id="followers"> followers</i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-user" id="following"> following </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-div {
+            width: 450px;
+            min-height: 100vh;
+            margin-top: 80px;
+            margin-left: 90px;
+        }
+
+        .img-div {
+            height: 300px;
+            width: 300px;
+            background-color: lightgray;
+            border-radius: 100%;
+
+        }
+
+        img {
+            margin-top: 38px;
+            margin-left: 38px;
+            border-radius: 50%;
+            height: 200px;
+
+        }
+
+        .elements {
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 10px
+        }
+
+        .stu-name {
+            margin-top: 20px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 25px;
+            padding: 5px;
+        }
+
+        .btn:hover {
+            background-color: lightgray;
+        }
+
+        .socal-link {
+            margin-top: 25px;
+        }
+
+        .socal-link a {
+            list-style: none;
+            color: black;
+            padding: 5px;
+        }
+    </style>
+</body>
+
+</html>
