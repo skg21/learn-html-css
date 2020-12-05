@@ -53,27 +53,50 @@
 
 <body>
     <div class="contaner">
-        <div class="main-div">
-            <div class="img-div">
-                <img id="profile-img"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqQ4D7_PCpB_0ZXYKtTvdtMPZnwJhKmPw6A&usqp=CAU">
+        <div class="main-left-div">
+            <div class="main-div">
+                <div class="img-div">
+                    <img id="profile-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqQ4D7_PCpB_0ZXYKtTvdtMPZnwJhKmPw6A&usqp=CAU">
+                </div>
+                <div class="elements">
+                    <h2 id="name">Sanjay Kumar</h2>
+                    <h3 class="id-name" id="username">skg21</h3>
+                    <h4 id="stu-name">student</h4>
+                    <button class="btn" type="text">Edit profile</button>
+                    <div id="socal-link-followers">
+                        <a href="#">
+                            <i class="fa fa-user" id="followers"> followers</i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-user" id="following"> following </i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="elements">
-                <h2 id="name">Sanjay Kumar</h2>
-                <h3 class="id-name" id="username">skg21</h3>
-                <h4 id="stu-name">student</h4>
-                <button class="btn" type="text">Edit profile</button>
-                <div id="socal-link-followers">
-                    <a href="#">
-                        <i class="fa fa-user" id="followers"> followers</i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-user" id="following"> following </i>
-                    </a>
+        </div>
+        <div class="main-right-div">
+            <h4>Popular repositories</h4>
+            <div class="contener1">
+                <div class="left">
+                    <div class="lern">
+                        learn-html-css
+                    </div>
+                    <div class="redieas"></div>
+                    <h4>Html</h4>
+                </div>
+                <div class="right">
+                    <div class="larn-js">
+                        learn-js
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
 
     <style>
         @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -82,6 +105,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        .contaner {
+            display: flex;
         }
 
         .main-div {
@@ -137,6 +164,104 @@
             list-style: none;
             color: black;
             padding: 5px;
+        }
+
+        .main-div2 {
+            height: 500px;
+            width: 700px;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .main-div2 h4 {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        .divs {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .left-div {
+            height: 80px;
+            width: 300px;
+            border: solid 1px black;
+
+
+        }
+
+        .right-div {
+            height: 80px;
+            width: 300px;
+            border: solid 1px black;
+        }
+
+        .pandes-items {
+            list-style: none;
+        }
+
+        .divs2 {
+            display: flex;
+            border: solid 1px;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .border-radius {
+
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--color-repo-language-color-border);
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .left-div .span {
+            margin-right: 30px;
+        }
+
+        .main-right-div {
+            height: 700px;
+            width: 900px;
+            border: solid 1px;
+            margin-left: 20px;
+            justify-content: space-around;
+        }
+
+        .contener1 {
+            display: flex;
+            height: 200px;
+            width: 800px;
+            border: solid 1px;
+            justify-content: space-around;
+            margin-left: 30px
+        }
+
+        .main-right-div .left {
+            width: 300px;
+            height: 100px;
+            border: solid 1px;
+            margin-top: 20px;
+
+        }
+
+        .main-right-div .right {
+            width: 300px;
+            height: 100px;
+            border: solid 1px;
+            margin-top: 20px;
+
+        }
+
+        .main-right-div h4 {
+            margin-top: 70px;
+            margin-left: 80px;
         }
     </style>
 </body>
