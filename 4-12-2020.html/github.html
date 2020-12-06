@@ -8,7 +8,7 @@
         };
 
         function getGithubUserData() {
-            var url = "https://api.github.com/users/karsingh991";
+            var url = "https://api.github.com/users/ls";
             var req = new XMLHttpRequest();
             req.open("GET", url);
             req.onreadystatechange = function () {
@@ -44,9 +44,84 @@
 
             var sonuDom = document.getElementById("stu-name");
             sonuDom.innerHTML = userData.bio;
+
+            //getAllRepositories(userData.repos_url);
+
+            setReposDetails1();
         }
 
-        // followers user
+        function getAllRepositories(repos_url) {
+            var req = new XMLHttpRequest();
+            req.open("GET", repos_url);
+            req.send();
+            req.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    var reposData = JSON.parse(this.responseText);
+                    setReposDetails(reposData);
+                }
+            }
+        }
+
+        function setReposDetails(reposData) {
+            for (var i = 0; i < reposData.length; i++) {
+                var leftDiv = document.createElement("div");
+                leftDiv.setAttribute("class", "cart"); //<div class="left"></div>
+
+                var sideDiv = document.createElement("div");
+                sideDiv.setAttribute("class", "side");  //<div class="side"></div>
+                var repoLink = document.createElement("a");
+                repoLink.setAttribute("href", reposData[i].html_url);
+                repoLink.innerHTML = reposData[i].name;
+                sideDiv.appendChild(repoLink);
+
+                var completeDiv = document.createElement("div");
+                completeDiv.setAttribute("class", "complete");
+
+                var radiusDiv = document.createElement("div");
+                radiusDiv.setAttribute("class", "radius");
+
+                var h5Ele = document.createElement("h5");
+                h5Ele.innerHTML = reposData[i].language;
+
+
+                leftDiv.appendChild(sideDiv);
+                leftDiv.appendChild(completeDiv);
+
+                completeDiv.appendChild(radiusDiv);
+                completeDiv.appendChild(h5Ele);
+
+                //append leftDiv into container1
+                var container1 = document.getElementsByClassName("contener1");
+                container1[0].appendChild(leftDiv);
+            }
+        }
+        //---------------------------------right div-----//
+        function setReposDetails1() {
+            var url = "https://api.github.com/users/karsingh991/repos";
+
+            var req = new XMLHttpRequest();
+
+            for (var i = 0; i < 5; i++) {
+                var container = document.getElementsByClassName("container1");
+
+                var cardDiv = document.createElement("div");
+                cardDiv.setAttribute("class", "card");
+
+                var link = document.createElement("a");
+                link.setAttribute("class", "socal - link");
+                link.setAttribute("href", "#");
+                link.innerHTML = "some repo";
+
+                var h5 = document.createElement("h5");
+                h5.setAttribute("class", "h5");
+                h5.innerHTML = "go";
+                cardDiv.appendChild(link);
+                cardDiv.appendChild(h5);
+
+                container[0].appendChild(cardDiv);
+            }
+
+        }
 
     </script>
 </head>
@@ -77,19 +152,8 @@
         </div>
         <div class="main-right-div">
             <h4>Popular repositories</h4>
-            <div class="contener1">
-                <div class="left">
-                    <div class="lern">
-                        learn-html-css
-                    </div>
-                    <div class="redieas"></div>
-                    <h4>Html</h4>
-                </div>
-                <div class="right">
-                    <div class="larn-js">
-                        learn-js
-                    </div>
-                </div>
+            <div class="container1">
+                <!-- append dynamic repo cart -->
             </div>
         </div>
     </div>
@@ -188,7 +252,6 @@
         .left-div {
             height: 80px;
             width: 300px;
-            border: solid 1px black;
 
 
         }
@@ -196,7 +259,6 @@
         .right-div {
             height: 80px;
             width: 300px;
-            border: solid 1px black;
         }
 
         .pandes-items {
@@ -205,21 +267,8 @@
 
         .divs2 {
             display: flex;
-            border: solid 1px;
             justify-content: space-between;
             margin-top: 50px;
-        }
-
-        .border-radius {
-
-            position: relative;
-            top: 1px;
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border: 1px solid var(--color-repo-language-color-border);
-            border-radius: 50%;
-            background-color: red;
         }
 
         .left-div .span {
@@ -229,19 +278,10 @@
         .main-right-div {
             height: 700px;
             width: 900px;
-            border: solid 1px;
             margin-left: 20px;
             justify-content: space-around;
         }
 
-        .contener1 {
-            display: flex;
-            height: 200px;
-            width: 800px;
-            border: solid 1px;
-            justify-content: space-around;
-            margin-left: 30px
-        }
 
         .main-right-div .left {
             width: 300px;
@@ -262,6 +302,74 @@
         .main-right-div h4 {
             margin-top: 70px;
             margin-left: 80px;
+        }
+
+        .radius {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--color-repo-language-color-border);
+            border-radius: 50%;
+            background-color: red;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+        .redius1 {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--color-repo-language-color-border);
+            border-radius: 50%;
+            background-color: yellow;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+        .contener1 .complete {
+            display: flex;
+            width: 250px;
+            height: 70px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .complete h5 {
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+
+        .side {
+            margin-left: 42px;
+            margin-top: 10px;
+            height: 10px;
+            width: 100px;
+        }
+
+        .contener1 {
+            display: flex;
+            height: 200px;
+            width: 800px;
+            margin-left: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            align-items: flex-start;
+            border: 1px solid black;
+            height: 100px;
+            width: 150px;
+            margin: 20px 30px;
+        }
+
+        .container {
+            height: 300px;
+            max-width: 100vh;
+            border: solid 1px;
         }
     </style>
 </body>
