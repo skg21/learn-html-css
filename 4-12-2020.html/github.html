@@ -100,26 +100,44 @@
             var url = "https://api.github.com/users/karsingh991/repos";
 
             var req = new XMLHttpRequest();
+            req.open("GET", url);
+            req.send();
+            req.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    var responseData = JSON.parse(this.responseText);
 
-            for (var i = 0; i < 5; i++) {
-                var container = document.getElementsByClassName("container1");
+                    for (var i = 0; i < responseData.length; i++) {
+                        var container = document.getElementsByClassName("container1");
 
-                var cardDiv = document.createElement("div");
-                cardDiv.setAttribute("class", "card");
+                        var cardDiv = document.createElement("div");
+                        cardDiv.setAttribute("class", "card");
 
-                var link = document.createElement("a");
-                link.setAttribute("class", "socal - link");
-                link.setAttribute("href", "#");
-                link.innerHTML = "some repo";
+                        var link = document.createElement("a");
+                        link.setAttribute("class", "socal - link");
+                        link.setAttribute("href", responseData[i].html_url);
+                        link.innerHTML = responseData[i].name;
 
-                var h5 = document.createElement("h5");
-                h5.setAttribute("class", "h5");
-                h5.innerHTML = "go";
-                cardDiv.appendChild(link);
-                cardDiv.appendChild(h5);
+                        var h5 = document.createElement("h5");
+                        h5.setAttribute("class", "h5")
+                        h5.innerHTML = responseData[i].language;
+                        cardDiv.appendChild(link);
+                        cardDiv.appendChild(h5);
 
-                container[0].appendChild(cardDiv);
+                        var p = document.createElement("p");
+                        p.innerHTML = responseData[i].description;
+                        cardDiv.appendChild(p);
+
+                        var h3 = document.createElement("h3")
+                        h3.innerHTML = responseData[i].html_url;
+
+                        cardDiv.appendChild(h3);
+
+                        container[0].appendChild(cardDiv);
+                    }
+                }
             }
+
+
 
         }
 
@@ -362,7 +380,7 @@
             align-items: flex-start;
             border: 1px solid black;
             height: 100px;
-            width: 150px;
+            width: 200px;
             margin: 20px 30px;
         }
 
