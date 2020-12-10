@@ -37,6 +37,39 @@
                         </a>
                     </div>
                 </form>
+
+                <form action="" class="Sign-up-form">
+                    <h2 class="title">Sing up</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <input type="subimt" value="Sing up" class="btn-solid">
+                    <p class="social-text">Or Sing up with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+
             </div>
         </div>
         <div class="panels-container"></div>
@@ -71,6 +104,13 @@
             left: 0;
             top: 0;
 
+        }
+
+        .signin-signup {
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transform: translate();
         }
 
         form {
@@ -116,6 +156,62 @@
             font-size: 1.1rem;
             color: #333;
 
+        }
+
+        .input-field input::placeholder {
+            color: #aaa;
+            font-weight: 500;
+        }
+
+        .btn-solid {
+            width: 150px;
+            height: 49px;
+            border: none;
+            outline: none;
+            border-radius: 49px;
+            cursor: pointer;
+            background-color: #5995fd;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 10px 0;
+            transition: .5s;
+            text-align: center;
+
+        }
+
+        .btn-solid:hover {
+            background-color: #4d84e2;
+        }
+
+        .social-text {
+            padding: .7rem 0;
+            font-size: 1rem;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icon {
+            height: 46px;
+            width: 46px;
+            border: 1px solid #333;
+            margin: 0 0.45rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1rem;
+            border-radius: 50%;
+            transition: .3s;
+        }
+
+        .social-icon:hover {
+            color: #4481eb;
+            border-color: #4481eb;
         }
     </style>
 </body>
