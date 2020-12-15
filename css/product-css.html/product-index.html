@@ -45,10 +45,14 @@
                 <p>TREDING ON MEDIUM</p>
             </div>
             <div class="One-div">
-                <span class="span">01</span>
-                <img src="#" alt="logo-img">
-                <h4>Tim Denning in the Ascent</h4>
+                <div class="inner-div">
+                    <span class="span">01</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJa5UubhYREIZ7eECUn6CdUyYPh9WsV0cIKA&usqp=CAU"
+                        alt="logo-img">
+                    <h4>Tim Denning in the Ascent</h4>
+                </div>
                 <h2>This is How to Declutter Your Brain So You Can Achieve Higher-Level Thinking</h2>
+                <div class="det-div"> Dec.15 <span class="lo"> 6 min read </span> </div>
             </div>
             <div class="Two-div"></div>
             <div class="Three-div"></div>
@@ -176,14 +180,56 @@
         }
 
         .One-div {
-            height: 150px;
+            height: 130px;
             width: 400px;
             border: solid 1px black;
         }
 
-        .One-div span {
+        .One-div .span {
             color: rgba(230, 230, 230, 1);
             font-weight: bold;
+            font-size: 30px;
+        }
+
+        .inner-div {
+            display: flex;
+        }
+
+        .inner-div img {
+            margin-left: 30px;
+            margin-top: 10px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+
+        }
+
+        .inner-div h4 {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .One-div h2 {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 20px;
+            font-family: inherit;
+        }
+
+        .One-div .lo {
+            font-size: 13px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: rgba(117, 117, 117, 1);
+            line-height: 20px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .det-div {
+            margin-left: 30px;
+            height: 30px;
+            width: 200px;
+            padding: 5px 10px;
         }
     </style>
 </body>
