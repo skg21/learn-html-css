@@ -7,7 +7,7 @@
 
 <body>
     <!---section1-start-->
-    <section class="section1">
+    <div class="section1">
         <div class="main-div">
             <nav>
                 <h2>Medium</h2>
@@ -23,47 +23,48 @@
             </nav>
         </div>
 
-    </section>
+    </div>
     <!--section1-end-->
 
     <!-- section2-start-->
-    <section class="section2">
-        <h3>Where good ideas
-            <br> find you
-        </h3>
-        <h1>Red and share new on just about any topic Everyone's
-            <br> welcome. <a href="#"> Lerarn more.</a>
-        </h1>
-        <button>Get Started </button>
-    </section>
+    <div class="section2">
+        <div class="section2-div">
+            <h3>Where good ideas
+                <br> find you
+            </h3>
+            <h1>Red and share new on just about any topic Everyone's
+                <br> welcome. <a href="#"> Lerarn more.</a>
+            </h1>
+            <button>Get Started </button>
+        </div>
+    </div>
     <!--section2-end-->
+    <nav class="nav"></nav>
 
     <!--section3-start-->
-    <section class="section3">
-        <div class="container">
-            <div class="center-div">
-                <p>TREDING ON MEDIUM</p>
-            </div>
-            <div class="One-div">
-                <div class="inner-div">
-                    <span class="span">01</span>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJa5UubhYREIZ7eECUn6CdUyYPh9WsV0cIKA&usqp=CAU"
-                        alt="logo-img">
-                    <h4>Tim Denning in the Ascent</h4>
+    <div class="section3">
+        <div class="container-div">
+            <div class="inner-main-div">
+                <div class="left-div">
+                    <div class="left-inner-div">
+                        <div class="item-div">
+                            <div class="item-inner-div">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCRtu9x86OcdwTZU9HeZx39XUL8VSYjy1bpw&usqp=CAU"
+                                    alt="logo">
+                                <h4>Emily Stubbs In Fitness And In Healty</h4>
+                            </div>
+                            <h2> I Exercised Twice a day for 75day-Here's <br>What Happened</h2>
+                            <h3> I felt invincible </h3>
+                            <span> Nov 21 <div> . </div> 9 min read </span>
+                        </div>
+                    </div>
                 </div>
-                <h2>This is How to Declutter Your Brain So You Can Achieve Higher-Level Thinking</h2>
-                <div class="det-div"> Dec.15 <span class="lo"> 6 min read </span> </div>
+                <div class="right-div"></div>
             </div>
-            <div class="Two-div"></div>
-            <div class="Three-div"></div>
-            <div class="Four-div"></div>
-            <div class="Five-div"></div>
-            <div class="Six-div"></div>
-            <div class="Seven-div"></div>
-            <div class="eight-div"></div>
         </div>
+    </div>
 
-    </section>
+
     <!--section3-end-->
 
 
@@ -83,6 +84,7 @@
             border: 1px solid;
             background-color: #FFC017;
             padding: 5px 170px;
+            position: fixed;
         }
 
         .main-div {
@@ -130,10 +132,17 @@
         }
 
         .section2 {
-            height: 400px;
+            height: 470px;
             min-width: 100vh;
             border: solid 1px black;
             background-color: #FFC017;
+        }
+
+        .section2-div {
+            height: 350px;
+            width: 900px;
+            margin-top: 110px;
+            margin-left: 30px;
         }
 
         h3 {
@@ -158,80 +167,101 @@
             background-color: #FFC017;
         }
 
-        .section3 {
+
+        .nav {
+
+            height: 60px;
             min-width: 100vh;
-            height: 400px;
+            background-color: brown;
+        }
+
+        .section3 {
+            height: 800px;
+            min-width: 100vh;
+            border: solid 1px;
+        }
+
+        .container-div {
+            height: 600px;
+            width: 1300px;
             border: solid 1px black;
-            padding: 20px 9%;
+            margin-top: 50px;
+            margin-left: 120px;
+            padding: 20px 20px;
         }
 
-        .container {
-            height: 370px;
-            width: 1270px;
+        .inner-main-div {
+            height: 589px;
+            width: 1286px;
             border: solid 1px black;
-            padding: 5px 10px;
-        }
-
-        .center-div {
-            height: 40px;
-            width: 1100px;
-            border: solid 1px black;
-            padding: 5px 20px;
-        }
-
-        .One-div {
-            height: 130px;
-            width: 400px;
-            border: solid 1px black;
-        }
-
-        .One-div .span {
-            color: rgba(230, 230, 230, 1);
-            font-weight: bold;
-            font-size: 30px;
-        }
-
-        .inner-div {
+            padding: 5px 5px;
             display: flex;
         }
 
-        .inner-div img {
-            margin-left: 30px;
+        .left-div {
+            width: 800px;
+            height: 576px;
+            border: solid 1px;
+            display: block;
+            padding: 5px 5px;
+        }
+
+        .right-div {
+            width: 500px;
+            height: 576px;
+            border: solid 1px black;
+            padding: 5px 5px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .item-div {
+            height: 200px;
+            width: 700px;
+            border: solid 1px black;
+            margin: 30px 40px;
+            padding-bottom: 30px;
+        }
+
+        .item-inner-div {
+            height: 30px;
+            width: 470px;
+            border: solid 1px black;
             margin-top: 10px;
+            margin-left: 20px;
+            display: flex;
+        }
+
+        .item-inner-div img {
             height: 30px;
             width: 30px;
             border-radius: 50%;
-
+            margin-left: 20px;
         }
 
-        .inner-div h4 {
-            margin-left: 10px;
-            margin-top: 10px;
+        .item-inner-div h4 {
+            margin-left: 20px;
+            margin-top: 5px;
         }
 
-        .One-div h2 {
+        .item-div h2 {
             margin-top: 10px;
-            margin-left: 10px;
+            margin-left: 40px;
+        }
+
+        .item-div h3 {
+            margin-top: 5px;
+            margin-left: 40px;
             font-size: 20px;
-            font-family: inherit;
         }
 
-        .One-div .lo {
-            font-size: 13px;
-            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: rgba(117, 117, 117, 1);
-            line-height: 20px;
-            font-weight: 400;
-            margin-left: 10px;
+        .item-div span {
+            display: flex;
+            margin-left: 40px;
         }
 
-        .det-div {
-            margin-left: 30px;
-            height: 30px;
-            width: 200px;
-            padding: 5px 10px;
-        }
-    </style>
-</body>
-
-</html>
+        </body></html>
