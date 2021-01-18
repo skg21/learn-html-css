@@ -14,9 +14,15 @@ var articleData = {
 
 function loadIndex() {
     creatFunction(articleData);
+    responsData(creatFunction());
 }
 //-----------------------------------------//
-
+function responsData() {
+    var url = "http://localhost:3000";
+    fetch(url)
+        .then(response => response.json())
+        .then(data => responsData(data[0]));
+}
 
 function creatFunction(data) {
     var leftDiv = document.getElementsByClassName("left-div")[0];
