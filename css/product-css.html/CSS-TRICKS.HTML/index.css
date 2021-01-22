@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url("https://previews.123rf.com/images/akulamatiau/akulamatiau1507/akulamatiau150705236/42416187-putrajaya-malaysia-july-20th-2015-starbuck-coffee-over-wooden-background-founded-in-1971-starbucks-i.jpg");
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-light-gray-cloth-background-image_83888.jpg");
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -9,7 +9,7 @@ body{
 .loginbox{
     height: 420px;
     width: 320px;
-    background: #000;
+    background: #000;  
     color:#fff;
     top: 50%;
     left: 50%;
@@ -22,7 +22,7 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    position: absolute;
+    position: absolute; 
     top: -12%;
     left: 100px;
 }
