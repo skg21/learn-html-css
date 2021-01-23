@@ -9,7 +9,7 @@ function LoginForm() {
 
     var avator = document.createElement("img");
     avator.setAttribute("class", "avatar");
-    avator.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1I10m3DSqbPRLB01qyAF41xuuQXboajkzA&usqp=CAU");
+    avator.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiz_RXiqHzrPcs4zjrBfRPuXluatDCylsYyg&usqp=CAU");
 
     var h1 = document.createElement("h1");
     h1.innerText = "Login Here";
