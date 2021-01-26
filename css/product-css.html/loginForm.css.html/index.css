@@ -8,11 +8,10 @@ body{
     font-family: "open sans";
     color:#fff;
 }
-section{
+.sectionDiv{
     position: relative;
     height: 100vh;
-    width: 100%;
-    background: url("https://thumbs.dreamstime.com/b/night-low-light-capture-view-kishor-sagar-talab-kota-rajasthan-india-november-boat-parking-201283210.jpg");
+    width: 100%;background: url("https://image.shutterstock.com/image-photo/beautiful-upper-lake-bada-talab-260nw-1411074503.jpg");
     background-size: cover;
     background-position: center center;
 }
