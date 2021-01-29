@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function newElement() {
+            var input = document.getElementById("in");
+            var answer = "";
+            switch (input.value) {
+                case "h1":
+                    answer = document.createElement("h1");
+                    answer.innerText = "this is h1";
+                    break;
+                case "h2":
+                    answer = document.createElement("h2");
+                    answer.innerText = "this is h2";
+                    break;
+                case "h3":
+                    answer = document.createElement("h3");
+                    answer.innerText = "this is h3";
+                    break;
+                case "h4":
+                    answer = document.createElement("h4");
+                    answer.innerText = "this is h4";
+                    break;
+                case "h5":
+                    answer = document.createElement("h5");
+                    answer.innerText = "this is h5";
+                    break;
+                case "h6":
+                    answer = document.createElement("h6");
+                    answer.innerText = "this is h6";
+                    break;
+            }
+
+            var body = document.getElementsByClassName("b")[0];
+            console.log(answer)
+            body.appendChild(answer);
+
+        }
+    </script>
+</head>
+
+<body class="b">
+    <input type="text" id="in">
+    <button type="button" onclick="newElement()"> creat Elements </button>
+</body>
+
+</html>
