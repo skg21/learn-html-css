@@ -44,27 +44,4 @@ border: none;
 outline: none;
 margin: 1rem 0;
 
-}
-.control input[type="submit"]{
-    background: crimson;
-    color: #fff;
-    text-transform: uppercase;
-    font: 1.2rem;
-    opacity: .7;
-    transition:opacity .3s ease;
-}
-.control input[type="submit"]:hover{
-    opacity: 1;
-}
-.link{
-    text-align: center;
-}
-.link a{
-    text-decoration: none;
-    color: #fff;
-    opacity: .6;
-    transition:opacity .3s ease;
-}
-.link a:hover{
-    opacity: 1;
-}
+};
