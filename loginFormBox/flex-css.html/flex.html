@@ -3,43 +3,49 @@
 
 <body>
 
-    <div class="container">
-        <div class="Home">Home</div>
-        <div class="Search">Search</div>
-        <div class="Logout">Logout</div>
-    </div>
+    <nav class="container">
+        <div class="item1">Home</div>
+        <div class="item2">Search</div>
+        <div class="item3">Logout</div>
+    </nav>
 
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-
+        html,
+        body {
+            background-color: #ffeead;
+            margin: 10px;
         }
 
+        .container>div {
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            color: #ffeead;
+        }
+
+        .container>div:nth-child(1) {
+            background-color: #96ceb4;
+        }
+
+        .container>div:nth-child(2) {
+            background-color: #ff6f69;
+        }
+
+        .container>div:nth-child(3) {
+            background-color: #88d8b0;
+        }
+
+
+
         .container {
-            height: 100%;
-            width: 100%;
             border: 5px solid #ffcc5c;
             display: flex;
 
         }
 
         .container>div {
-            width: 300px;
-        }
-
-        .Home {
-            background-color: cadetblue;
-        }
-
-        .Search {
-            background-color: coral;
-        }
-
-        .Logout {
-            background-color: cadetblue;
+            width: 33.3333%;
         }
     </style>
 </body>
